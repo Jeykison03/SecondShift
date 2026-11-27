@@ -1,0 +1,15 @@
+{
+  "name": "SecondShift",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:24",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "forwardPorts": [5173],
+  "portsAttributes": { "5173": { "label": "SecondShift (Vite)", "onAutoForward": "openPreview" } },
+  "postCreateCommand": "npm ci && [ -f .env ] || cp .env.example .env",
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode", "supabase.vscode-supabase-extension"]
+    }
+  }
+}

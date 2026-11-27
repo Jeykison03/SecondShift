@@ -1,0 +1,79 @@
+/* =====================================================================
+   SecondShift design tokens — shared by seller + buyer side.
+   Use these variables instead of hard-coded colours/sizes.
+   ===================================================================== */
+:root {
+  /* Brand */
+  --brand-900: #073b2c;
+  --brand-800: #0a4d39;
+  --brand-700: #0b5740;
+  --brand-600: #0f6b4f;   /* primary */
+  --brand-500: #16855f;
+  --brand-100: #d6efe4;
+  --brand-50:  #ecf7f2;
+  --accent:    #b7f171;   /* lime highlight, use sparingly */
+  --accent-ink:#1f3a05;
+
+  /* Neutrals */
+  --ink-900: #0f1a16;     /* headings */
+  --ink-700: #2c3a35;     /* body */
+  --ink-500: #5b6b65;     /* muted */
+  --ink-400: #82918b;     /* placeholder */
+  --line:    #e3e8e5;     /* borders */
+  --line-strong: #cdd5d1;
+  --surface: #ffffff;
+  --surface-2: #f6f8f7;   /* app background */
+  --surface-3: #eef2f0;
+
+  /* Feedback */
+  --success: #13804f;  --success-bg: #e3f6ec;
+  --warning: #a15c07;  --warning-bg: #fef3d6;
+  --danger:  #b42318;  --danger-bg:  #fee4e2;
+  --info:    #1d4ed8;  --info-bg:    #e3ebff;
+
+  /* Condition grades */
+  --grade-like-new:  #13804f;  --grade-like-new-bg:  #e3f6ec;
+  --grade-very-good: #0e7490;  --grade-very-good-bg: #dff3f8;
+  --grade-good:      #a15c07;  --grade-good-bg:      #fef3d6;
+  --grade-fair:      #c2410c;  --grade-fair-bg:      #ffe9dc;
+
+  /* Typography */
+  --font-sans: 'Inter Variable', Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+
+  /* Spacing (4px grid) */
+  --s-1: 4px;  --s-2: 8px;  --s-3: 12px; --s-4: 16px;
+  --s-5: 20px; --s-6: 24px; --s-8: 32px; --s-10: 40px; --s-12: 48px; --s-16: 64px;
+
+  /* Shape & depth */
+  --radius-sm: 8px;
+  --radius:    12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+  --shadow-xs: 0 1px 2px rgba(15, 26, 22, 0.06);
+  --shadow-sm: 0 1px 3px rgba(15, 26, 22, 0.08), 0 1px 2px rgba(15, 26, 22, 0.04);
+  --shadow-md: 0 8px 24px -6px rgba(15, 26, 22, 0.12), 0 2px 6px rgba(15, 26, 22, 0.05);
+  --shadow-lg: 0 24px 48px -12px rgba(15, 26, 22, 0.22);
+  --focus-ring: 0 0 0 3px rgba(22, 133, 95, 0.28);
+
+  /* Motion — subtle only */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --t-fast: 120ms;
+  --t: 200ms;
+
+  /* Layout */
+  --topbar-h: 64px;
+  --sidebar-w: 248px;
+  --content-max: 1200px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --t-fast: 0ms; --t: 0ms; }
+}

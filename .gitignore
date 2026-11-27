@@ -1,0 +1,15 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# deps / build
+node_modules/
+dist/
+
+# supabase local
+supabase/.branches
+supabase/.temp
+
+# local tooling
+.claude/
